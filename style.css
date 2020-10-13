@@ -1,0 +1,28 @@
+.title {
+  font-size: 40px;
+}
+.text {
+  color: #54585a;
+  font-family: Rubik, sans-serif;
+}
+.box {
+  border: #cdd1d4 solid 3px;
+}
+.num {
+  background-color: #cdd1d4;
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+}
+.btn {
+  color: white;
+  font-family: Rubik, sans-serif;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+  background-color: aqua;
+  border-radius: 5px;
+  border: none;
+  height: 25px;
+  width: 70px;
+}

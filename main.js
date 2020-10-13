@@ -1,5 +1,7 @@
 "use strict";
 
+// HTML selectors
+
 const userNum = document.querySelector(".js-num");
 console.log(userNum);
 const clue = document.querySelector(".js-clue");
@@ -8,26 +10,33 @@ const count = document.querySelector(".js-count");
 console.log(count);
 const btn = document.querySelector(".js-btn");
 
-let trys = 0;
+// Number of attempts
 
+let attempt = 0;
 
-function getRandomNumber() {
-    return Math.ceil(Math.random() * 100);
+// Random number function
+
+function getRandomNumber(max) {
+    return Math.ceil(Math.random() * max);
 }
+const random = getRandomNumber(100);
+console.log(`random: ${random}`);
 
-const random = getRandomNumber();
-console.log(`random:${random}`);
+// Number guess function
 
 function guess() {
 
+    // User number input
     const num = parseInt(userNum.value);
     console.log(num);
 
-    trys += 1;
-    count.innerHTML = `Número de intentos = ${trys}`;
+    // Attempt counter
+    attempt += 1;
+    count.innerHTML = `Número de intentos = ${attempt}`;
 
-    console.log(trys);
+    console.log(attempt);
     
+    // Clues
     if (random > num) {
         console.log("mayor");
         clue.innerHTML = "Demasiado bajo."
@@ -43,6 +52,6 @@ function guess() {
 
 }
 
-//console.log(guess());
+// Button event listener
 
 btn.addEventListener("click", guess);

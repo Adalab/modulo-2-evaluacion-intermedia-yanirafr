@@ -3,19 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Media</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <title>Evaluación intermedia módulo 2</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="title">Adivina el número</h1>
-    <p class="instructions">Introduce aquí tu número</p>
+    <main class="main">
+    <h1 class="text title">Adivina el número</h1>
+    <p class="text">Introduce aquí tu número:</p>
     <form>
-      <input type="number" class="js-num" name="num" id="num">
-      <input class = "js-btn" type="button" value="Prueba">
+      <input type="number" class="num js-num" name="num" id="num">
+      <input class = "btn js-btn" type="button" value="Prueba">
     </form>
-    <p class="js-clue">Escribe el número y dale a prueba</p>
-    <p class="js-count">Número de intentos : 0</p>
-
-
+    <p class="text box js-clue">Escribe el número y dale a prueba</p>
+    <p class="text box js-count">Número de intentos : 0</p>
+  </main>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
