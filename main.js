@@ -11,15 +11,16 @@ const btn = document.querySelector(".js-btn");
 let trys = 0;
 
 
-const getRandom = function () {
-    const random = parseInt(Math.random() * 100);
-    return random;
-};
+function getRandomNumber() {
+    return Math.ceil(Math.random() * 100);
+}
+
+const random = getRandomNumber();
+console.log(`random:${random}`);
 
 function guess() {
-    const random = getRandom();
-    console.log(random);
-    const num = userNum.value;
+
+    const num = parseInt(userNum.value);
     console.log(num);
 
     trys += 1;
@@ -31,11 +32,11 @@ function guess() {
         console.log("mayor");
         clue.innerHTML = "Demasiado bajo."
     }
-    if (random < num) {
+    else if (random < num) {
         console.log("menor");
         clue.innerHTML = "Demasiado alto."
     }
-    if (random === num) {
+    else if (random === num) {
         console.log("igual");
         clue.innerHTML = "Has ganado campeona!!!"
     }
