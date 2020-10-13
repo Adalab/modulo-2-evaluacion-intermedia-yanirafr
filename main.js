@@ -42,6 +42,6 @@ function guess() {
 
 }
 
-console.log(guess());
+//console.log(guess());
 
 btn.addEventListener("click", guess);
