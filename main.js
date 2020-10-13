@@ -32,7 +32,7 @@ function guess() {
 
     // Attempt counter
     attempt += 1;
-    count.innerHTML = `Número de intentos = ${attempt}`;
+    count.innerHTML = `Número de intentos : ${attempt}`;
 
     console.log(attempt);
     
